@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{9E418B41-B3F0-445D-982E-FD7A94BDDED9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6FC7CF1-BACF-4C63-B621-0033F9182A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadWorldNL.MadTools.Api", "src\MadWorldNL.MadTools.Api\MadWorldNL.MadTools.Api.csproj", "{6C8A9DDB-A45D-492C-8496-0092F6DEE031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C8A9DDB-A45D-492C-8496-0092F6DEE031} = {E6FC7CF1-BACF-4C63-B621-0033F9182A32}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

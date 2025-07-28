@@ -1,0 +1,13 @@
+# docker compose up --build --force-recreate
+name: mad-tools
+services:
+  tools-api:
+    image: ghcr.io/madworldnl/mad-tools-api:latest
+    container_name: mad-tools-api
+    restart: always
+    build:
+      context: .
+      dockerfile: ./src/MadWorldNL.MadTools.Api/Dockerfile
+    ports:
+      - "6600:8080"
+      - "6601:8081"
