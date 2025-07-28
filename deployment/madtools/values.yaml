@@ -1,0 +1,21 @@
+namespace: "mad-tools-production"
+  
+image:
+  tag: "latest"  
+  
+clusterIssuer:
+  enabled: true
+  
+certification:
+  email: "oveldman@gmail.com"
+  commonDomain: "www.mad-world.eu"
+  country: "NL"
+  
+madtools:
+  api:
+    deployment: "mad-tools-api-deployment"
+    app: "mad-tools-api"
+    name: "mad-tools-api"
+    loadBalancer: "mad-tools-api-load-balancer"
+    image: "ghcr.io/madworldnl/mad-tools-api"
+    host: "tools-api.mad-world.eu"

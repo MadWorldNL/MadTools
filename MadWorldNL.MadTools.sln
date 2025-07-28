@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\docker-ci.yml = .github\workflows\docker-ci.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{8CF7A0F2-7A92-4239-8962-E4E286745D5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "deployment", "deployment\deployment.csproj", "{87B1BFD0-A9C4-4258-9620-256081FCF78F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +29,17 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031} = {E6FC7CF1-BACF-4C63-B621-0033F9182A32}
 		{56D810D7-F043-44BF-A3CD-CF9DD8A72029} = {9E418B41-B3F0-445D-982E-FD7A94BDDED9}
+		{8CF7A0F2-7A92-4239-8962-E4E286745D5F} = {9E418B41-B3F0-445D-982E-FD7A94BDDED9}
+		{87B1BFD0-A9C4-4258-9620-256081FCF78F} = {8CF7A0F2-7A92-4239-8962-E4E286745D5F}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B1BFD0-A9C4-4258-9620-256081FCF78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B1BFD0-A9C4-4258-9620-256081FCF78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B1BFD0-A9C4-4258-9620-256081FCF78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B1BFD0-A9C4-4258-9620-256081FCF78F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
