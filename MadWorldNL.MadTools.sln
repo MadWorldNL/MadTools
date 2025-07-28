@@ -10,6 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6FC7CF1-BAC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadWorldNL.MadTools.Api", "src\MadWorldNL.MadTools.Api\MadWorldNL.MadTools.Api.csproj", "{6C8A9DDB-A45D-492C-8496-0092F6DEE031}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{56D810D7-F043-44BF-A3CD-CF9DD8A72029}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\docker-main.yml = .github\workflows\docker-main.yml
+		.github\workflows\docker-tag.yml = .github\workflows\docker-tag.yml
+		.github\workflows\docker-ci.yml = .github\workflows\docker-ci.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +24,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031} = {E6FC7CF1-BACF-4C63-B621-0033F9182A32}
+		{56D810D7-F043-44BF-A3CD-CF9DD8A72029} = {9E418B41-B3F0-445D-982E-FD7A94BDDED9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6C8A9DDB-A45D-492C-8496-0092F6DEE031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
