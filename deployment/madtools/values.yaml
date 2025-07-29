@@ -1,7 +1,7 @@
 namespace: "mad-tools-production"
   
 image:
-  tag: "latest"  
+  tag: "v1.0.0"  
   
 clusterIssuer:
   enabled: true

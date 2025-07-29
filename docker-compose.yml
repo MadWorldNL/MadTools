@@ -2,7 +2,7 @@
 name: mad-tools
 services:
   tools-api:
-    image: ghcr.io/madworldnl/mad-tools-api:latest
+    image: ghcr.io/madworldnl/mad-tools-api:v1.0.0
     container_name: mad-tools-api
     restart: always
     build:
