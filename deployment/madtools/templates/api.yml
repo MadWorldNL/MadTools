@@ -10,10 +10,12 @@ spec:
   selector:
     matchLabels:
       app: {{ .Values.madtools.api.app }}
+      task: {{ .Values.madtools.api.name }}
   template:
     metadata:
       labels:
         app: {{ .Values.madtools.api.app }}
+        task: {{ .Values.madtools.api.name }}
     spec:
       containers:
         - name: {{ .Values.madtools.api.name }}
