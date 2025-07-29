@@ -8,7 +8,7 @@ clusterIssuer:
   
 certification:
   email: "oveldman@gmail.com"
-  commonDomain: "mad-world.eu"
+  commonDomain: "www.mad-world.eu"
   country: "NL"
   
 madtools:
