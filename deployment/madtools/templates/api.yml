@@ -29,7 +29,7 @@ metadata:
 spec:
   selector:
     app: {{ .Values.madtools.api.app }}
-    Task: {{ .Values.madtools.api.name }}
+    task: {{ .Values.madtools.api.name }}
   ports:
     - protocol: TCP
       name: http
