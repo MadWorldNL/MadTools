@@ -23,6 +23,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ .Values.madtools.api.loadBalancer.default }}
+                name: {{ .Values.madtools.api.loadBalancer }}
                 port:
                   number: 8080
