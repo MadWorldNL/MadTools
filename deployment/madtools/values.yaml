@@ -16,12 +16,6 @@ madtools:
     deployment: "mad-tools-api-deployment"
     app: "mad-tools-api"
     name: "mad-tools-api"
-    loadBalancer:
-      default: "mad-tools-api-load-balancer"
-      ipv4: "mad-tools-api-load-balancer-ipv4"
-      ipv6: "mad-tools-api-load-balancer-ipv6"
+    loadBalancer: "mad-tools-api-load-balancer"
     image: "ghcr.io/madworldnl/mad-tools-api"
-    host:
-      default: "tools-api.mad-world.eu"
-      ipv4: "tools-api-ipv4.mad-world.eu"
-      ipv6: "tools-api-ipv6.mad-world.eu"
+    host: "tools-api.mad-world.eu"
