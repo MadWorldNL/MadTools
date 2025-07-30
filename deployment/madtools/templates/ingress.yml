@@ -12,17 +12,39 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - {{ .Values.madtools.api.host }}
+        - {{ .Values.madtools.api.host.default }}
+        - {{ .Values.madtools.api.host.ipv4 }}
+        - {{ .Values.madtools.api.host.ipv6 }}
       secretName: madworld-tls
   {{ end }}
   rules:
-    - host: {{ .Values.madtools.api.host }}
+    - host: {{ .Values.madtools.api.host.default }}
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: {{ .Values.madtools.api.loadBalancer }}
+                name: {{ .Values.madtools.api.loadBalancer.ipv4 }}
+                port:
+                  number: 8080
+    - host: {{ .Values.madtools.api.host.ipv4 }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ .Values.madtools.api.loadBalancer.ipv4 }}
+                port:
+                  number: 8080
+    - host: {{ .Values.madtools.api.host.ipv6 }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ .Values.madtools.api.loadBalancer.ipv6 }}
                 port:
                   number: 8080
