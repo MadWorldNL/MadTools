@@ -17,6 +17,7 @@ madtools:
     app: "mad-tools-api"
     name: "mad-tools-api"
     loadBalancer:
+      default: "mad-tools-api-load-balancer"
       ipv4: "mad-tools-api-load-balancer-ipv4"
       ipv6: "mad-tools-api-load-balancer-ipv6"
     image: "ghcr.io/madworldnl/mad-tools-api"

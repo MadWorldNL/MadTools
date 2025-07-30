@@ -26,6 +26,26 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  name: {{ .Values.madtools.api.loadBalancer.default }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.madtools.api.app }}
+    task: {{ .Values.madtools.api.name }}
+  ipFamilies:
+    - IPv4
+    - IPv6
+  ipFamilyPolicy: RequireDualStack
+  ports:
+    - protocol: TCP
+      name: http
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
   name: {{ .Values.madtools.api.loadBalancer.ipv4 }}
   namespace: {{ .Values.namespace }}
 spec:
@@ -41,7 +61,6 @@ spec:
       port: 8080
       targetPort: 8080
   type: LoadBalancer
----
 ---
 apiVersion: v1
 kind: Service
