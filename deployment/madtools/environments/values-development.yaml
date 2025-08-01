@@ -1,0 +1,11 @@
+namespace: "mad-tools-development"
+
+image:
+  tag: "v1.0.1"
+
+clusterIssuer:
+  enabled: false
+  
+madtools:
+  api:
+    host: "tools-api.mad-world.local"
